@@ -1,11 +1,11 @@
 //--------------------------------------
 let score = "33abc"  
-//score = "33abc"
+score = "33abc"
 //score = "true"
 //score = null
 
 //---conversion of any data into number
-//console.log(typeof score)
+console.log(typeof score)
  
 let valueInNumber = Number(score) // used to convert any datatype in number 
 
