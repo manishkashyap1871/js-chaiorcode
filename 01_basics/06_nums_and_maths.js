@@ -26,7 +26,7 @@
 // console.log(Math.abs(-4)); // it return only absolute value without any sign
 // console.log(Math.round(4.6)); // it round off the digit near to its
 // console.log(Math.ceil(4.1)); // it return the above round off value of decimal value given 
-// console.log(Math.floor(4.9)); // it retrun the lower round off vaue of given deciaml value
+// console.log(Math.floor(4.9)); // it retrun the lower round off value of given deciaml value
 // console.log(Math.min(1,2,3,4,5,6,)); // it helps to find the minimum value in the given array
 // console.log(Math.max(1,2,3,4,5,5,6,7)); // it hep to find the maximum value in the given array
 
