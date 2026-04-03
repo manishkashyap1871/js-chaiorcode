@@ -9,11 +9,11 @@ function saymyname(){
 }
 
 // saymyname //--> it is just a reference of function : does not give any output just used for referencing
-// saymyname() // --> it is execution of function 
+//saymyname() // --> it is execution of function 
 
-// function addtwonum(number1,number2){ //here number1 & number2 are parameters
-//     console.log(number1+number2);
-// }
+function addtwonum(number1,number2){ //here number1 & number2 are parameters
+    console.log(number1+number2);
+}
 
 // const result = addtwonum(2,4) //here 2 & 3 are arguments
 // console.log("result",result); // output -> result undefined
@@ -23,8 +23,8 @@ function saymyname(){
 function addtwonum(num1,num2){
     return num1+num2
 }
-const result = addtwonum(3,5)
-// console.log("results :",result); // here we first return the reuslt in the function so it can be passed in the reuslt
+//const result = addtwonum(3,5)
+// console.log("results :",result); // here we first return the reuslt in the function so it can be passed in the result
 
 function loginuser(username /*= "sam"*/){ // here this "sam" is default value it can be used inplace of below if condition
     if(/* !username */ username===undefined){ // this if condition is used for checking whether the username is enter or not 
@@ -52,12 +52,12 @@ function handleobject(anyobject){
     console.log(`name is ${anyobject.username} and price is ${anyobject.price}`);    
 }
 
-// handleobject(user) //-this work on custom already exist output
+//handleobject(user) //-this work on custom already exist output
 //now handling function by generating new input
-handleobject({
-    username : "adhyan",
-    price : 100
-})
+// handleobject({
+//     username : "adhyan",
+//     price : 100
+// })
 
 
 //---function to return the 2nd element of the array
@@ -69,4 +69,4 @@ function returnSecondElement(getarray) {
 }
 
 // console.log(returnSecondElement(myArray)); 
-console.log(returnSecondElement([1000,900,800,700,600]));
+//console.log(returnSecondElement([1000,900,800,700,600]));
