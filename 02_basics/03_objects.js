@@ -20,9 +20,9 @@ const jsuser ={
 
 /* Method 1  -> not much correct method of accessing */ console.log(jsuser.name); // here when we getting output with the help of "." then don't need to treat as string
 /* Method 2  -> right nethod should be used */ console.log(jsuser["name"]); // this method treat the key as string
-// console.log(jsuser["full name"]);
-// console.log(jsuser[mysym]);
-// console.log(jsuser);
+console.log(jsuser["full name"]);
+console.log(jsuser[mysym]);
+console.log(jsuser);
 
 // change cam be made in obejct easily but the key should not be freezed -> after freezing a key no changes can be possible in it
 // jsuser.email = "manish@gpt.com"
@@ -35,7 +35,7 @@ jsuser.greeting = function(){
     console.log(`hello user,${this["full name"]}`);
     
 }
-console.log(jsuser.greeting());
+//console.log(jsuser.greeting());
 
 
 
