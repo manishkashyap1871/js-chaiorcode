@@ -25,22 +25,22 @@ const user = {
 
 //-----------------normal function (another method of defining function)
 
-const chai = function(){
-    let username = "manish";
-    //console.log(this.username);  // output -> undefined because "this" context can be work within objects only
-    console.log(this); // this will give a very big output   
-}
-chai() 
+// const chai = function(){
+//     let username = "manish";
+//     console.log(this.username);  // output -> undefined => because "this" context can be work within objects only
+//     // console.log(this); // this will give a very big output   
+// }
+// chai() 
 
 
 //----------- arrow function
-// const chai = () =>{
-//     let username = "manish";
-//     console.log(this.username);  // -> undefined
-//     //console.log(this);  // -> {}
+const chai = () =>{
+    let username = "manish";
+    //console.log(this.username);  // -> undefined
+    console.log(this);  // -> {}
     
-// }
-// chai()
+}
+chai()
 
 // basic differnce between the arrow function and normal function is that in both cases when we run "console.log(this.username);" then o/p -> undefined but when we run "console.log(this);" output are diffrents  
 
@@ -55,9 +55,9 @@ chai()
 // console.log(addtwo(2,3));
 
 //---second (implicit return)
-const addtwo = (num1,num2) => num1+num2 // not need of "return" keyword because here we don't use "{}" , so basically we use return when we have use "{}"
-console.log(addtwo(5,7));
-const myname = (name) => ({username:"manish"}) //here we treating object as element 
+// const addtwo = (num1,num2) => num1+num2 // not need of "return" keyword because here we don't use "{}" , so basically we use return when we have use "{}"
+// console.log(addtwo(5,7));
+// const myname = (name) => ({username:"manish"}) //here we treating object as element 
 
 
 
