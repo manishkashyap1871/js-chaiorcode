@@ -10,6 +10,7 @@
 
 // example
 
+
 const month = 3
 switch (month) {
 case 1:
@@ -29,3 +30,4 @@ case 4:
         console.log("default case match");
         break;
 }
+  
