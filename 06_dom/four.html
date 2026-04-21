@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style ="background-color :#212121; color :#fff  ; ">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    //firstly we are generating Function to Add New Language in list with the help of innerHTML
+    function addlanguage(langname){
+        const li = document.createElement('li'); //	Creates a new <li> element every time function is called
+        li.innerHTML=`${langname}` // Add text inside <li>
+        document.querySelector('.language').appendChild(li) //Selects the <ul> using class name then Adds new <li> at the end of list
+    }
+    // Function Calls
+    addlanguage("python")
+    addlanguage("html")
+
+    // now we are genearting the same function with the help of .appendChild()
+    function addpotilanguage(langname){
+        const li = document.createElement('li'); //	Creates a new <li> element every time function is called
+        li.append(document.createTextNode(langname)) // Creates safe text (not HTML)
+        document.querySelector('.language').appendChild(li) //Selects the <ul> using class name then Adds new <li> at the end of list
+    }
+    addpotilanguage("cpp")
+    addpotilanguage("c#")
+
+    // now here we are talking about the editing in the dom
+
+    //------method 1 : Replace 2nd Element (Using replaceWith())
+    
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log (secondLang);
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li') //Create new element
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli) // Replace old element
+
+    //------method 2 :  Replace 1st Element (Using outerHTML)
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML='<li>Typescript</li>'
+
+    // 	outerHTML replaces the entire element itself Not just content — whole tag is replaced
+
+    //remove
+    const lastLang = document.querySelector('li:last-child') //  Select Last Element
+    lastLang.remove() // Removes that element from DOM
+
+</script>
+</html>
