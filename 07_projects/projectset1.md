@@ -58,3 +58,14 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+## Project 3 
+```javascript
+const clock = document.getElementById('clock');
+
+// basic structur of setInterval => setInterval(funtion(){},time updation in ms)
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString()); => it will give o/p only in console
+  clock.innerHTML = (date.toLocaleTimeString());
+}, 1000);
+```
