@@ -58,7 +58,7 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
-## Project 3 
+## Project 3 solution 
 ```javascript
 const clock = document.getElementById('clock');
 
@@ -70,7 +70,7 @@ setInterval(function () {
 }, 1000);
 ```
 
-### Project 4
+### Project 4 Solution
 
 ```javascript
 let randomNumber = parseInt(Math.random() * 100 + 1);
