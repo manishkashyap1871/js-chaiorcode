@@ -171,3 +171,65 @@ function newGame() {
     });
 }
 ```
+
+## Project 5 solution
+
+```javascript
+// choosing random colors
+const randomcolor = function(){
+    const hex = '0123456789ABCDEF';
+    let color = '#';
+    for(let i=0 ; i<6 ; i++){
+        color += hex[Math.floor(Math.random()*16)];
+    }
+    return color;
+};
+
+let intervalid
+
+//funtion for changing color every second
+const startchangingcolor = function(){
+    if(!intervalid){
+         intervalid = setInterval(changebgcolor,1000);
+    }
+    function changebgcolor() {
+        document.body.style.backgroundColor = randomcolor();
+    }
+};
+
+//function to stop changing bg color
+const stopchangingcolor = function(){
+     clearInterval(intervalid);
+     intervalid = null;
+};
+
+//selecting start button 
+document.querySelector("#start").addEventListener('click',startchangingcolor);
+
+//selecting stop button
+document.querySelector("#stop").addEventListener('click',stopchangingcolor)
+
+```
+
+## Project 6 solution
+```javascript
+const insert = document.querySelector("#insert")
+
+window.addEventListener('keydown',(e)=>{
+    insert.innerHTML=`
+    <div class ='color'>
+    <table>
+    <tr>
+      <th> key </th>
+      <th> key code</th>
+      <th> code</th>
+    </tr>
+    <tr>
+      <td>${e.key  === ' ' ? 'space' : e.key } </td>
+      <td>${e.keyCode}</td>
+      <td>${e.code}</td>
+    </tr>
+    <tr>
+    `
+})
+```
